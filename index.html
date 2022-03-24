@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1350, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap" rel="stylesheet"/>
+
+    <title>Memorama</title>
+  </head>
+  <body>
+    <header>
+      <div class="container"></div>
+    </header>
+    <main>
+      <div class="main-frame">
+        <div class="game-field-container">
+          <div class="game-field"></div>
+        </div>
+
+        <div class="popup-win">
+          <div class="win-message">
+            Congratulations, pilot! <br />
+            You have won!<br />
+            Total moves:
+          </div>
+          <div class="playername-container">
+            <div class="playername-frame">
+              <div class="playername-input">
+                <input
+                  name="playername"
+                  type="text"
+                  class="player-name-input"
+                  placeholder="unknown meatbag #00"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            Enter your name for Leader Board.<br />
+            (if cheats were used the result will not be added to the list)
+          </div>
+          <div class="okbutton-container">
+            <div class="ok-button" data-button="win_ok"></div>
+          </div>
+        </div>
+
+        <div class="game-options">
+          <!-- <h1 class="options-header">Memorama</h1> -->
+          <div class="display-frame">
+            <div class="display-output">></div>
+          </div>
+
+          <div class="difficulty-selector">
+            <div class="difficulty-selector-down"></div>
+            <div class="difficulty-selector-up"></div>
+          </div>
+
+          <div class="controls-container">
+            <div class="reset-button-container">
+              <div class="reset-button"></div>
+            </div>
+            <div class="switches-container">
+              <div class="switch-button-pairs"></div>
+              <div class="switch-button-broken"></div>
+              <div class="switch-button-sound"></div>
+            </div>
+          </div>
+
+          <div class="input-container">
+            <div class="rec-header">record list</div>
+            <div class="display-records">
+              <div class="rec-nav">
+                <div class="rec-nav-item active" data-listtab="easy">Easy</div>
+                <div class="rec-nav-item" data-listtab="normal">Normal</div>
+                <div class="rec-nav-item" data-listtab="hard">Hard</div>
+              </div>
+              ##_name___________________________date_______moves<br />
+              <div class="rec-list">
+                01.test name......................2022/02/23..0013<br />
+                02.wwwwwwwwwwwwwwwwwww............2022/02/21..0999<br />
+                03.wwwwwwwwwwwwwwwwwww............2022/02/21..0999<br />
+                04.wwwwwwwwwwwwwwwwwww............2022/02/21..0999<br />
+                05................................................<br />
+                06................................................<br />
+              </div>
+              <div class="rec-footer-nav">
+                <div class="rec-footer-nav-item" data-footclick="clear">
+                  clear data
+                </div>
+                <div class="scrolls">
+                  <div class="rec-footer-nav-item" data-footclick="up">▲</div>
+                  <div class="rec-footer-nav-item" data-footclick="down">▼</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div>x2&nbsp;<button class="test" data-state="0"></button>&nbsp;x4</div> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="git-link">
+          <p class="git-link">
+            2022
+            <a href="https://github.com/madkorney" class="git-link"
+              >Proudly made on Earth</a
+            >
+          </p>
+        </div>
+        <div class="rss-link">
+          <p class="rss-link">
+            <img
+              src="./assets/svg/rs_school_js.svg"
+              alt="RSS logo"
+              class="rss-logo"
+            />&nbsp;<a href="https://rs.school/js-stage0/" class="rss-link"
+              >Rolling Scope School</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="script/main.js"></script>
+  </body>
+</html>
