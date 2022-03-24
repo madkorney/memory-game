@@ -4,7 +4,7 @@ further development of my project - one of the tasks form Rolling Scope School, 
 [https://rs.school/js-stage0/](https://rs.school/js-stage0/)
 
 ## Deploy
-[https://madkorney.github.io/rsschool-cv/](https://madkorney.github.io/memory-game/)
+[https://madkorney.github.io/memory-game/](https://madkorney.github.io/memory-game/)
 
 ## TODO
 + [x] - Clone to personal github repo, deploy via gh-pages  
